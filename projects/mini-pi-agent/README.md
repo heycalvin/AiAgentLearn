@@ -2,6 +2,8 @@
 
 这是一个教学导向的迷你 AI Agent 实现，通过 4 个渐进式 Demo 揭示 Pi Agent 及现代 Coding Agent 的底层思想。
 
+> 💡 **零门槛说明**：本项目的 Demo 1 ~ Demo 4 采用模拟逻辑（Mock Loop）拆解核心流程，**不需要配置任何真实 API Key** 即可直接运行调试！
+
 ## 项目 Demo 列表
 
 1. **`npm run demo1`**：[Demo 1: Minimal Loop](src/demo1-minimal-loop/index.ts) - 最简 ReAct 循环。
@@ -12,12 +14,12 @@
 ## 运行方式
 
 ```bash
-# 1. 安装依赖
+# 1. 进入项目目录并安装依赖
+cd projects/mini-pi-agent
 npm install
 
-# 2. 拷贝并配置环境变量
-cp .env.example .env
-
-# 3. 运行任意 Demo
+# 2. 直接运行任意 Demo（无需 API Key）
 npm run demo1
 ```
+
+*(注：如需未来接入真实大模型 API，可参考 [.env.example](.env.example) 配置文件)*
