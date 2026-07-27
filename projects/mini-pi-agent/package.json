@@ -1,0 +1,23 @@
+{
+  "name": "mini-pi-agent",
+  "version": "1.0.0",
+  "description": "手搓 Mini Pi Agent 实战教学项目",
+  "main": "src/demo1-minimal-loop/index.ts",
+  "scripts": {
+    "demo1": "ts-node src/demo1-minimal-loop/index.ts",
+    "demo2": "ts-node src/demo2-tools/index.ts",
+    "demo3": "ts-node src/demo3-session-tree/index.ts",
+    "demo4": "ts-node src/demo4-compression/index.ts"
+  },
+  "keywords": ["ai-agent", "pi-agent", "typescript"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
