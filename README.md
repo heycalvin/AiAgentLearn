@@ -27,6 +27,7 @@
   * [02. Tool Calling（工具调用与执行机制）](notes/pi-agent/02-tool-calling.md)
   * [03. Session Tree（会话树与历史回退）](notes/pi-agent/03-session-tree.md)
   * [04. Context Compression（上下文压缩与剪枝）](notes/pi-agent/04-context-pruning.md)
+  * [05. Pi Config Skills 速查（18 个 Skill 用途）](notes/pi-agent/05-pi-config-skills.md)
 
 ---
 
