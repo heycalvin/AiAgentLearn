@@ -1,55 +1,47 @@
-# AI Agent 学习与实战知识库 (AiAgentLearn)
+# 🤖 AI Agent 零基础通俗学习与实战库 (AiAgentLearn)
 
-欢迎来到 **AiAgentLearn** 知识库！本仓库旨在帮助开发者全方位掌握 AI Agent（智能体）的底层原理、系统架构与实战开发。
-
----
-
-## 📂 仓库目录导航
-
-### 1. 📖 理论与读书笔记 (`notes/`)
-
-* **《深入理解 AI Agent》通俗笔记** ([notes/ai-agent-book](notes/ai-agent-book))
-  * [引言](notes/ai-agent-book/book/introduction/index.md)
-  * [第 1 章 Agent 基础知识](notes/ai-agent-book/book/chapter1/index.md)
-  * [第 2 章 上下文工程](notes/ai-agent-book/book/chapter2/index.md)
-  * [第 3 章 用户记忆和知识库](notes/ai-agent-book/book/chapter3/index.md)
-  * [第 4 章 工具](notes/ai-agent-book/book/chapter4/index.md)
-  * [第 5 章 Coding Agent 与代码生成](notes/ai-agent-book/book/chapter5/index.md)
-  * [第 6 章 Agent 的评估](notes/ai-agent-book/book/chapter6/index.md)
-  * [第 7 章 模型后训练](notes/ai-agent-book/book/chapter7/index.md)
-  * [第 8 章 Agent 的持续进化](notes/ai-agent-book/book/chapter8/index.md)
-  * [第 9 章 多模态与实时交互](notes/ai-agent-book/book/chapter9/index.md)
-  * [第 10 章 多 Agent 协作](notes/ai-agent-book/book/chapter10/index.md)
-  * [配套实验笔记](notes/ai-agent-book/lab/)
-
-* **⚡ 手搓 Pi Agent 原理解析** ([notes/pi-agent](notes/pi-agent))
-  * [01. Agent Loop（自治循环原理）](notes/pi-agent/01-agent-loop.md)
-  * [02. Tool Calling（工具调用与执行机制）](notes/pi-agent/02-tool-calling.md)
-  * [03. Session Tree（会话树与历史回退）](notes/pi-agent/03-session-tree.md)
-  * [04. Context Compression（上下文压缩与剪枝）](notes/pi-agent/04-context-pruning.md)
-  * [05. Pi Config Skills 速查（18 个 Skill 用途）](notes/pi-agent/05-pi-config-skills.md)
+欢迎来到 **AiAgentLearn** 知识库！本仓库专为**零基础小白与开发者**打造，抛弃枯燥晦涩的理论黑话，用最接地气的生活比喻和极简代码，带你彻底搞懂 **AI Agent（智能体）** 的底层原理与实战开发。
 
 ---
 
-### 2. 💻 代码实战与 Demo (`projects/`)
+## 🗺️ 学习路线与知识库目录
+
+### 📖 第一部分：通俗原理精讲 (`notes/`)
+
+* **[🌟 学习路线总览与导航 (Roadmap)](notes/00-learning-roadmap.md)**
+* **🐣 模块 1：建立直观认知**
+  * [01. 什么是 AI Agent？（大模型 vs 智能体）](notes/01-concepts/01-what-is-agent.md)
+  * [02. Agent 的四大核心部件（大脑、手脚、记事本、监工）](notes/01-concepts/02-four-components.md)
+* **⚙️ 模块 2：搞懂核心运转机制**
+  * [01. Agent 是怎么自主干活的？（想-做-看-纠错循环）](notes/02-mechanisms/01-agent-loop.md)
+  * [02. 给 Agent 装上手脚（工具调用与 MCP 协议）](notes/02-mechanisms/02-tools-and-mcp.md)
+  * [03. 给 Agent 装上记事本（记忆系统与知识库 RAG）](notes/02-mechanisms/03-memory-and-rag.md)
+  * [04. 怎样把信息喂给 Agent？（上下文工程与 Token 剪枝）](notes/02-mechanisms/04-context-engineering.md)
+* **🚀 模块 3：进阶场景**
+  * [01. 像程序员一样修 Bug 的 Coding Agent](notes/03-advanced/01-coding-agent.md)
+  * [02. 多 Agent 团队分工协作 (Multi-Agent)](notes/03-advanced/02-multi-agent.md)
+
+---
+
+### 💻 第二部分：手搓 Mini Pi Agent 代码实战 (`projects/`)
 
 * **🛠 Mini Pi Agent (TypeScript 实战)** ([projects/mini-pi-agent](projects/mini-pi-agent))
-  * **Demo 1**: [最简 Agent Loop](projects/mini-pi-agent/src/demo1-minimal-loop/index.ts)
-  * **Demo 2**: [Core Four Tools 实现 (read/write/edit/bash)](projects/mini-pi-agent/src/demo2-tools/index.ts)
-  * **Demo 3**: [Session Tree 状态回溯与分支](projects/mini-pi-agent/src/demo3-session-tree/index.ts)
-  * **Demo 4**: [Token 剪枝与上下文压缩策略](projects/mini-pi-agent/src/demo4-compression/index.ts)
+  * **Demo 1**: [最简 Agent Loop 循环](projects/mini-pi-agent/src/demo1-minimal-loop/index.ts) —— 30 行代码看懂自主闭环
+  * **Demo 2**: [Core Four Tools 实现 (read/write/edit/bash)](projects/mini-pi-agent/src/demo2-tools/index.ts) —— 给 Agent 装上四只手脚
+  * **Demo 3**: [Session Tree 状态回溯与分支](projects/mini-pi-agent/src/demo3-session-tree/index.ts) —— 允许 Agent 后悔的时光机
+  * **Demo 4**: [Token 剪枝与上下文压缩策略](projects/mini-pi-agent/src/demo4-compression/index.ts) —— 让 Agent 长久对话不糊涂
 
 ---
 
-## 🚀 快速开始
+## 🚀 快速上手运行
 
 ```bash
-# 克隆仓库
-git clone <your-repo-url>
-cd AiAgentLearn
-
-# 体验手搓 Mini Pi Agent
+# 1. 进入实战项目
 cd projects/mini-pi-agent
+
+# 2. 安装依赖
 npm install
+
+# 3. 运行 Demo 1 体验 Agent 闭环
 npm run demo1
 ```
