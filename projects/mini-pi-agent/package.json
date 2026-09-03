@@ -7,9 +7,14 @@
     "demo1": "ts-node src/demo1-minimal-loop/index.ts",
     "demo2": "ts-node src/demo2-tools/index.ts",
     "demo3": "ts-node src/demo3-session-tree/index.ts",
-    "demo4": "ts-node src/demo4-compression/index.ts"
+    "demo4": "ts-node src/demo4-compression/index.ts",
+    "demo5": "ts-node src/demo5-mini-pi-cli/index.ts"
   },
-  "keywords": ["ai-agent", "pi-agent", "typescript"],
+  "keywords": [
+    "ai-agent",
+    "pi-agent",
+    "typescript"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
