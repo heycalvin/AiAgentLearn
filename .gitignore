@@ -19,3 +19,4 @@ dist/
 Thumbs.db
 .idea/
 .vscode/
+.agents/*
